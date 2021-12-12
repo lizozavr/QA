@@ -1,0 +1,10 @@
+{
+  "simulation": "main.UserSimulation",
+  "simulationId": "usersimulation",
+  "start": 1639337922554,
+  "description": "Tests",
+  "scenarios": ["Get Post", "Post new Post", "Put Post", "Delete Post"],
+  "assertions": [
+
+  ]
+}
