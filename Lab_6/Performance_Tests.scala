@@ -102,8 +102,8 @@ class UserSimulation extends Simulation {
         .delete("/posts/${id}")
     )
 
-  setUp(post.inject(rampUsers(15).during(30.seconds)).protocols(httpProtocol),
-    get.inject(rampUsers(15).during(30.seconds)).protocols(httpProtocol),
-    put.inject(rampUsers(15).during(30.seconds)).protocols(httpProtocol),
-    delete.inject(rampUsers(15).during(30.seconds)).protocols(httpProtocol))
+  setUp(post.inject(rampUsers(100).during(30.seconds)).protocols(httpProtocol),
+    get.inject(rampUsers(150).during(30.seconds)).protocols(httpProtocol),
+    put.inject(rampUsers(150).during(30.seconds)).protocols(httpProtocol),
+    delete.inject(rampUsers(150).during(30.seconds)).protocols(httpProtocol))
 }
